@@ -1,0 +1,375 @@
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  src: url(/static/font/Orbitron-Medium.ttf);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+body {
+    background-color: #34495e;
+    /*background: linear-gradient(to bottom, #34495e, #202d3a);*/
+    font-weight: 500;
+    font-color: #000000;
+    height: 100%;
+    font-family: 'Orbitron', sans-serif;
+    overflow-x: hidden;
+}
+
+.main-content {
+    position: relative;
+}
+.main-content a:hover { color: #000000; }
+
+h1 {
+    font-size: 4em;
+    width: 100%;
+    font-color: #000000;
+    text-align: center;
+}
+
+h1 a {
+    text-decoration: none;
+    cursor: text;
+}
+
+/* Hexagons */
+.base {
+    width: 100%;
+    max-width: 612px;
+    margin: 0 auto;
+    line-height: 150%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.level2 {
+    position:relative;
+    top: -54px;
+    width: 100%;
+    max-width: 408px;
+    margin: 0px 102px;
+    line-height: 150%;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* --------------- Hexagon1 --------------- */
+.hexagon {
+    position: relative;
+    width: 200px;
+    height: 115.47px;
+    background-color: #2980b9;
+    margin: 57.74px 2px;
+    float: left;
+}
+.hexagon:before,
+.hexagon:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    margin: 0 -100px;
+    border-left: 100px solid rgba(255, 0, 0, 0);
+    border-right: 100px solid rgba(255, 0, 0, 0);
+}
+.hexagon:before {
+    bottom: 100%;
+    border-bottom: 57.74px solid #2980b9;
+}
+.hexagon:after {
+    top: 100%;
+    width: 0;
+    border-top: 57.74px solid #2980b9;
+}
+
+/*hover*/
+.hexagon:hover {
+    position: relative;
+    width: 200px;
+    height: 115.47px;
+    background-color: #e67e22;
+    margin: 57.74px 2px;
+    float: left;
+    /*Transition*/
+    -webkit-transition: All 0.4s ease;
+    -moz-transition: All 0.4s ease;
+    -o-transition: All 0.4s ease;
+    -ms-transition: All 0.4s ease;
+    transition: All 0.4s ease;
+}
+.hexagon:hover:before {
+    bottom: 100%;
+    border-bottom: 57.74px solid #e67e22;
+    /*Transition*/
+    -webkit-transition: All 0.4s ease;
+    -moz-transition: All 0.4s ease;
+    -o-transition: All 0.4s ease;
+    -ms-transition: All 0.4s ease;
+    transition: All 0.4s ease;
+}
+.hexagon:hover:after {
+    top: 100%;
+    width: 0;
+    border-top: 57.74px solid #e67e22;
+    /*Transition*/
+    -webkit-transition: All 0.4s ease;
+    -moz-transition: All 0.4s ease;
+    -o-transition: All 0.4s ease;
+    -ms-transition: All 0.4s ease;
+    transition: All 0.4s ease;
+}
+
+/* --------------- Hexagon1: END --------------- */
+
+/* --------------- Hexagon2 --------------- */
+.hexagon_2 {
+    position: relative;
+    width: 200px;
+    height: 115.47px;
+    background-color: #1abc9c;
+    margin: 57.74px 2px;
+    float: left;
+}
+.hexagon_2:before,
+.hexagon_2:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    margin: 0 -100px;
+    border-left: 100px solid rgba(255, 0, 0, 0);
+    border-right: 100px solid rgba(255, 0, 0, 0);
+}
+.hexagon_2:before {
+    bottom: 100%;
+    border-bottom: 57.74px solid #1abc9c;
+}
+.hexagon_2:after {
+    top: 100%;
+    width: 0;
+    border-top: 57.74px solid #1abc9c;
+}
+/*hover*/
+.hexagon_2:hover {
+    position: relative;
+    width: 200px;
+    height: 115.47px;
+    background-color: #e67e22;
+    margin: 57.74px 2px;
+    float: left;
+    /*Transition*/
+    -webkit-transition: All 0.4s ease;
+    -moz-transition: All 0.4s ease;
+    -o-transition: All 0.4s ease;
+    -ms-transition: All 0.4s ease;
+    transition: All 0.4s ease;
+}
+.hexagon_2:hover:before {
+    bottom: 100%;
+    border-bottom: 57.74px solid #e67e22;
+    /*Transition*/
+    -webkit-transition: All 0.4s ease;
+    -moz-transition: All 0.4s ease;
+    -o-transition: All 0.4s ease;
+    -ms-transition: All 0.4s ease;
+    transition: All 0.4s ease;
+}
+.hexagon_2:hover:after {
+    top: 100%;
+    width: 0;
+    border-top: 57.74px solid #e67e22;
+    /*Transition*/
+    -webkit-transition: All 0.4s ease;
+    -moz-transition: All 0.4s ease;
+    -o-transition: All 0.4s ease;
+    -ms-transition: All 0.4s ease;
+    transition: All 0.4s ease;
+}
+/* --------------- Hexagon2: END --------------- */
+
+p{
+    text-align: center;
+    width: 100%;
+}
+
+a:link { color: #000000; }
+a:visited { color: #000000; }
+a:hover { color: #e67e22; }
+
+.icon{
+    width: 64px;
+    height: 64px;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    padding: 0 0 20px 0;
+}
+
+footer a:link { color: #000000; }
+footer a:visited { color: #000000; }
+footer a:hover { color: #e67e22; }
+
+#setting {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+}
+#setting img {
+    width: 24px;
+    height: 24px;
+}
+
+/* 404 not found */
+p.bin_404 {
+    text-align: center;
+    font-family: 'Droid Sans Mono';
+    font-size: 12px;
+}
+span#b44, span#b00{
+    color: #2980b9;
+}
+
+/* Link */
+#link_box {
+    margin: 100px auto 0;
+    width: 80%;
+    text-align: center;
+}
+#link_box a { text-decoration: none; }
+#link_box a:hover { color: #000000; }
+
+.link_image {
+    margin: 0px 20px 0 0;
+    width: 42px;
+    height: 42px;
+    float: left;
+}
+.link_image_hover {
+    margin: 0px auto 0;
+    width: 42px;
+    height: 42px;
+    float: right;
+    visibility: hidden;
+}
+.link {
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #2980b9;
+    text-align: center;
+    overflow: auto;
+    zoom: 1; 
+}
+.link:hover {
+    background-color: #e67e22;
+    margin: 20px auto;
+    padding: 10px;
+    overflow: auto;
+    zoom: 1;
+    /*Transition*/
+    -webkit-transition: All 0.4s ease;
+    -moz-transition: All 0.4s ease;
+    -o-transition: All 0.4s ease;
+    -ms-transition: All 0.4s ease;
+    transition: All 0.4s ease;
+}
+
+.link_content {
+    max-width: 75%;
+    text-align: left;
+    float: left;
+}
+
+@media screen and (max-width:630px){
+    h1 {
+        font-size: 2em;
+    }
+
+    .base {
+        width: 100%;
+        max-width: 202px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0 0 100px 0;
+        overflow: hidden;
+
+    }
+    .level2 {
+        width: 100%;
+        top: 0px;
+        max-width: 202px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0 0 100px 0;
+        overflow: hidden;
+    }
+
+    .hexagon {
+        position: relative;
+        width: 200px;
+        height: 115.47px;
+        background-color: #2980b9;
+        margin: 57.74px 2px;
+        float: left;
+    }
+    .hexagon:before,
+    .hexagon:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        margin: 0 -100px;
+        border-left: 100px solid rgba(255, 0, 0, 0);
+        border-right: 100px solid rgba(255, 0, 0, 0);
+    }
+    .hexagon:before {
+        bottom: 100%;
+        border-bottom: 57.74px solid #2980b9;
+    }
+    .hexagon:after {
+        top: 100%;
+        width: 0;
+        border-top: 57.74px solid #2980b9;
+    }
+
+    .hexagon_2 {
+        position: relative;
+        width: 200px;
+        height: 115.47px;
+        background-color: #1abc9c;
+        margin: 57.74px 2px;
+        float: left;
+    }
+    .hexagon_2:before,
+    .hexagon_2:after     {
+        content: "";
+        position: absolute;
+        width: 0;
+        margin: 0 -100px;
+        border-left: 100px solid rgba(255, 0, 0, 0);
+        border-right: 100px solid rgba(255, 0, 0, 0);
+    }
+    .hexagon_2:before {
+        bottom: 100%;
+        border-bottom: 57.74px solid #1abc9c;
+    }
+    .hexagon_2:after {
+        top: 100%;
+        width: 0;
+        border-top: 57.74px solid #1abc9c;
+    }
+    /* Link */
+    .link_image {
+        margin: 0px auto;
+        float: none;
+    }
+    .link_image_hover {
+        margin: 0px auto;
+        float: none;
+    }
+
+    .link_content {
+        max-width: 100%;
+        text-align: center;
+        float: none;
+    }
+
+}
